@@ -43,6 +43,7 @@ class WorldBankSpider(scrapy.Spider):
             print("indi_name_cn:", j)
             item['indi_name_cn'] = j
             self.filenames = indi_name_cn
+            # 123
             # items.append(item)
 
     def download_excel(self, response):
@@ -61,12 +62,8 @@ class WorldBankSpider(scrapy.Spider):
             output.close()
             return None
 
-# -*- coding:utf-8 -*-
 
-# import scrapy
-# import requests
-# from saas.items import WorldBankItem
-#
+
 #
 # class WorldBankSpider(scrapy.Spider):
 #     name = "worldbank"
