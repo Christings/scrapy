@@ -48,18 +48,18 @@ class WorldBankSpider(scrapy.Spider):
     def download_excel(self, response):
         # print("url:"+response.url)
         # excel_url = response.url
-        # name_temp = response.url.split("/")[-1]
-        # name = name_temp.split("?")[-2]
-        # print("name:", name)
-        for each in self.filenames:
-            # print("name:" + name)
-            self.filenames.index()
-            filename = r"D:\workspace\scrapy\saas\worldbankexcelfiles\%s.xls" % each
-            resp = requests.get(response.url)
-            output = open(filename, 'wb')
-            output.write(resp.content)
-            output.close()
-            return None
+        name_temp = response.url.split("/")[-1]
+        name = name_temp.split("?")[-2]
+        print("name:", name)
+        # for each in self.filenames:
+        #     # print("name:" + name)
+        #     self.filenames.index()
+        filename = r"D:\workspace\scrapy\saas\worldbankexcelfiles\%s.xls" % name
+        resp = requests.get(response.url)
+        output = open(filename, 'wb')
+        output.write(resp.content)
+        output.close()
+        return None
 
 
 
