@@ -49,6 +49,7 @@ class ComtradeSpider(scrapy.Spider):
         print("html:"+str(response.body))
 
 
+
     # def start_requests(self):
     #     url = self.start_url
     #     resp = requests.get(url)
