@@ -2,7 +2,6 @@
 
 from scrapy.conf import settings
 import scrapy
-from scrapy.item import i
 import requests
 import re
 from caas.items import ComtradeCatalogItem
@@ -11,11 +10,11 @@ from caas.items import ComtradeCatalogItem
 class ComtradeCatalogSpider(scrapy.Spider):
     name = "comtradecatalog"
     # 1.一级目录url，调整的关键字为px=H0-H4,S1-S4
-    #   https: //comtrade.un.org/db/mr/rfCommoditiesList.aspx?px = H0 & cc = TOTAL
+    #   https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=H0&cc=TOTAL
     # 2.二级子目录url，调整的关键字为px=H0-H4，cc=01-99
-    #   https: //comtrade.un.org/db/mr/rfCommoditiesList.aspx?px = H0 & cc = 01
+    #   https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=H0&cc=01
     # 3.三级子目录url
-    #   https: // comtrade.un.org / db / mr / rfCommoditiesList.aspx?px = H0 & cc = 0101
+    #   https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=H0&cc=0101
 
     start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=H0&cc=TOTAL"
 
@@ -31,34 +30,38 @@ class ComtradeCatalogSpider(scrapy.Spider):
         'handle_httpstatus_list': [301, 302]
     }
 
-    output_path = './test.csv'
 
     def start_requests(self):
         yield scrapy.Request(url=self.start_url, callback=self.parse_level1, cookies=self.cookie, headers=self.headers,
                              meta=self.meta)
 
+    # 一级目录最终存储的地方（编号，名称，描述）
+    cat_level1_num = []
+    cat_level1_name = []
+    cat_level1_desc = []
+    # 二级目录最终存储的位置（编号，名称，描述）
+    cat_level2_url = []
+    cat_level2_num = []
+    cat_level2_name = []
+    cat_level2_desc = []
+    # 三级目录最终存储的位置（编号，名称，描述）
+    cat_level3_url = []
+    cat_level3_num = []
+    cat_level3_name = []
+    cat_level3_desc = []
+
     # 解析一级目录
     def parse_level1(self, response):
-        item = ComtradeCatalogItem()
+        # item = ComtradeCatalogItem()
         selector = scrapy.Selector(response)
         # 一级分类的编号、名称、描述的原始数据
-        catalog_level1_number_primary = selector.xpath('//table[@id="dgPzCommodities"]/tr/td[1]/a/text()').extract()
+        catalog_level1_num_primary = selector.xpath('//table[@id="dgPzCommodities"]/tr/td[1]/a/text()').extract()
         catalog_level1_primary = selector.xpath(u'//table[@id="dgPzCommodities"]/tr/td[2]/text()').extract()
 
-        catalog_level1_number_list = []
-        # 提取一级分类编号的有用字段，去除空格等。
-        for each in catalog_level1_number_primary:
-            catalog_level1_num = each.replace('\xa0\xa0', '')
-            if catalog_level1_num != "":
-                # print("catalog_level1_number:", catalog_level1_num)
-                # catalog_level1_number_list.append(catalog_level1_num)
-                item["catalog_level1_num"] = catalog_level1_num
-
-        # print("catalog_level1_number_list:", catalog_level1_number_list)
-        # output = open(self.output_path, 'wb')
-        # output.write(bytearray(catalog_level1_number_list))
-        # output.close()
-        # return None
+        # 提取二级分类的url
+        catalog_level2_url = selector.xpath('//table[@id="dgPzCommodities"]/tr/td[1]/a/@href').extract()
+        del(catalog_level2_url[0])
+        print("catalog_level2_url:", catalog_level2_url)
 
         # 删除一级分类名称、描述前部无用的字段
         del (catalog_level1_primary[0:4])
@@ -70,10 +73,48 @@ class ComtradeCatalogSpider(scrapy.Spider):
             if catalog_level1 != "":
                 catalog_level1 = catalog_level1[1:]
                 if (i % 2 == 0):
-                    # catalog_level1_name = catalog_level1
-                    # print("双数catalog_level1_name:", catalog_level1_name)
-                    item["catalog_level1_name"] = catalog_level1
+                    catalog_level1_name = catalog_level1
+                    print("双数catalog_level1_name:", catalog_level1_name)
+                    # item["catalog_level1_name"] = catalog_level1_name
+                    # print(item["catalog_level1_name"])
+                    # yield item
+                    self.a.append(catalog_level1_name);
+                    # print("self.a:", self.a)
+
+                elif (i % 2 == 1):
+                    catalog_level1_desc = catalog_level1
+                    print("单数catalog_level1_desc:", catalog_level1_desc)
+                    # item["catalog_level1_desc"] = catalog_level1_desc
+                    # yield item
+                    self.b.append(catalog_level1_desc);
+                    # print("self.b:", self.b)
                 else:
-                    # catalog_level1_desc = catalog_level1
-                    # print("单数catalog_level1_desc:", catalog_level1_desc)
-                    item["catalog_level1_desc"] = catalog_level1
+                    pass
+        print("self.a:", self.a)
+        print("self.b:", self.b)
+        # 提取一级分类编号的有用字段，去除空格等。
+        for each in catalog_level1_num_primary:
+            catalog_level1_num = each.replace('\xa0\xa0', '')
+            if catalog_level1_num != "":
+                print("catalog_level1_number:", catalog_level1_num)
+                # item["catalog_level1_num"] = catalog_level1_num
+                # print("ok:", item["catalog_level1_num"])
+                # yield item
+                self.c.append(catalog_level1_num);
+        print("self.c:", self.c)
+
+        # output = open(self.output_path, 'wb')
+        # output.write(bytearray(catalog_level1_number_list))
+        # output.close()
+        # return None
+
+        for i in range(len(self.c)):
+            item = ComtradeCatalogItem()
+            item["catalog_level1_num"] = self.c[i]
+            item["catalog_level1_name"] = self.a[i]
+            item["catalog_level1_desc"] = self.b[i]
+            yield item
+            # output = open(self.output_path, 'wb')
+            # output.write(self.c[i])
+            # output.close()
+            # return None

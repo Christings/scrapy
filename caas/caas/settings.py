@@ -14,6 +14,9 @@ BOT_NAME = 'caas'
 SPIDER_MODULES = ['caas.spiders']
 NEWSPIDER_MODULE = 'caas.spiders'
 
+FEED_URI = u'file:///d://workspace/scrapy/caas/comtrade_catalog.csv'
+FEED_FORMAT = 'CSV'
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'caas (+http://www.yourdomain.com)'
 
@@ -52,7 +55,6 @@ COOKIES = {
     "_gat": "1"
 }
 
-
 # Disable Telnet Console (enabled by default)
 # TELNETCONSOLE_ENABLED = False
 
@@ -82,9 +84,10 @@ COOKIES = {
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'caas.pipelines.CaasPipeline': 300,
-# }
+ITEM_PIPELINES = {
+    'caas.pipelines.ComtradeCatalogPipeline': 300,
+    # 'caas.pipelines.CaasPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
