@@ -1,0 +1,285 @@
+catalog_level1_num,catalog_level1_name,catalog_level1_desc
+01, Live animals, Live animals
+02, Meat and edible meat offal, Meat and edible meat offal
+03," Fish, crustaceans, molluscs, aquatic invertebrates ne"," Fish & crustacean, mollusc & other  aquatic invertebrate"
+05," Products of animal origin, nes"," Products of animal origin, nes or  included."
+06," Live trees, plants, bulbs, roots, cut flowers etc"," Live tree & other plant; bulb, root; cut  flowers etc"
+07, Edible vegetables and certain roots and tubers, Edible vegetables and certain roots and  tubers.
+08," Edible fruit, nuts, peel of citrus fruit, melons", Edible fruit and nuts; peel of citrus  fruit or melons.
+09," Coffee, tea, mate and spices"," Coffee, tea, matF and spices."
+10, Cereals, Cereals
+11," Milling products, malt, starches, inulin, wheat glute", Prod.mill.indust; malt; starches;  inulin; wheat gluten
+12," Oil seed, oleagic fruits, grain, seed, fruit, etc, ne"," Oil seed, oleagi fruits; miscell grain,  seed, fruit etc"
+13," Lac, gums, resins, vegetable saps and extracts nes"," Lac; gums, resins & other vegetable saps  & extracts."
+14," Vegetable plaiting materials, vegetable products nes", Vegetable plaiting materials; vegetable  products nes
+15," Animal,vegetable fats and oils, cleavage products, et", Animal/veg fats & oils & their cleavage  products; etc
+16," Meat, fish and seafood food preparations nes"," Prep of meat, fish or crustaceans,  molluscs etc"
+17, Sugars and sugar confectionery, Sugars and sugar confectionery.
+18, Cocoa and cocoa preparations, Cocoa and cocoa preparations.
+20," Vegetable, fruit, nut, etc food preparations"," Prep of vegetable, fruit, nuts or other  parts of plants"
+21, Miscellaneous edible preparations, Miscellaneous edible preparations.
+22," Beverages, spirits and vinegar"," Beverages, spirits and vinegar."
+23," Residues, wastes of food industry, animal fodder", Residues & waste from the food indust;  prepr ani fodder
+24, Tobacco and manufactured tobacco substitutes, Tobacco and manufactured tobacco substitutes
+25," Salt, sulphur, earth, stone, plaster, lime and cement", Salt; sulphur; earth & ston; plastering  mat; lime & cem
+26," Ores, slag and ash"," Ores, slag and ash."
+27," Mineral fuels, oils, distillation products, etc"," Mineral fuels, oils & product of their  distillation;etc"
+28," Inorganic chemicals, precious metal compound, isotope"," Inorgn chem; compds of prec mtl,  radioact elements etc"
+29, Organic chemicals, Organic chemicals.
+30, Pharmaceutical products, Pharmaceutical products.
+31, Fertilizers, Fertilisers.
+32," Tanning, dyeing extracts, tannins, derivs,pigments et", Tanning/dyeing extract; tannins &  derivs; pigm etc
+33," Essential oils, perfumes, cosmetics, toileteries"," Essential oils & resinoids; perf,  cosmetic/toilet prep"
+34," Soaps, lubricants, waxes, candles, modelling pastes"," Soap, organic surface-active agents,  washing prep, etc"
+35," Albuminoids, modified starches, glues, enzymes", Albuminoidal subs; modified starches;  glues; enzymes.
+36," Explosives, pyrotechnics, matches, pyrophorics, etc", Explosives; pyrotechnic prod; matches;  pyrop alloy; etc
+37, Photographic or cinematographic goods, Photographic or cinematographic goods.
+38, Miscellaneous chemical products, Miscellaneous chemical products.
+39, Plastics and articles thereof, Plastics and articles thereof.
+40, Rubber and articles thereof, Rubber and articles thereof.
+41, Raw hides and skins (other than furskins) and leather, Raw hides and skins (other than  furskins) and leather.
+42," Articles of leather, animal gut, harness, travel good", Articles of leather; saddlery/harness;  travel goods etc
+43," Furskins and artificial fur, manufactures thereof", Furskins and artificial fur;  manufactures thereof.
+44," Wood and articles of wood, wood charcoal", Wood and articles of wood; wood  charcoal.
+45, Cork and articles of cork, Cork and articles of cork.
+46," Manufactures of plaiting material, basketwork, etc."," Manufactures of straw, esparto/other  plaiting mat; etc"
+47," Pulp of wood, fibrous cellulosic material, waste etc", Pulp of wood/of other fibrous cellulosic  mat; waste etc
+48," Paper & paperboard, articles of pulp, paper and board"," Paper & paperboard; art of paper pulp,  paper/paperboard"
+49," Printed books, newspapers, pictures etc"," Printed books, newspapers, pictures &  other product etc"
+50, Silk, Silk.
+51," Wool, animal hair, horsehair yarn and fabric thereof"," Wool, fine/coarse animal hair, horsehair  yarn & fabric"
+52, Cotton, Cotton.
+53," Vegetable textile fibres nes, paper yarn, woven fabri", Other vegetable textile fibres; paper  yarn & woven fab
+54, manmade filaments, Man-made filaments.
+55, manmade staple fibres, Man-made staple fibres.
+56," Wadding, felt, nonwovens, yarns, twine, cordage, etc"," Wadding, felt & nonwoven; yarns; twine,  cordage, etc"
+57, Carpets and other textile floor coverings, Carpets and other textile floor  coverings.
+58," Special woven or tufted fabric, lace, tapestry etc", Special woven fab; tufted tex fab; lace;  tapestries etc
+59," Impregnated, coated or laminated textile fabric"," Impregnated, coated, cover/laminated  textile fabric etc"
+60, Knitted or crocheted fabric, Knitted or crocheted fabrics.
+61," Articles of apparel, accessories, knit or crochet"," Art of apparel & clothing access,  knitted or crocheted."
+62," Articles of apparel, accessories, not knit or crochet"," Art of apparel & clothing access, not  knitted/crocheted"
+63," Other made textile articles, sets, worn clothing etc", Other made up textile articles; sets;  worn clothing etc
+64," Footwear, gaiters and the like, parts thereof"," Footwear, gaiters and the like; parts of  such articles."
+65, Headgear and parts thereof, Headgear and parts thereof.
+66," Umbrellas, walking-sticks, seat-sticks, whips, etc"," Umbrellas, walking-sticks, seat-sticks,  whips, etc"
+67," Bird skin, feathers, artificial flowers, human hair", Prepr feathers & down; arti flower;  articles human hair
+68," Stone, plaster, cement, asbestos, mica, etc articles"," Art of stone, plaster, cement, asbestos,  mica/sim mat"
+69, Ceramic products, Ceramic products.
+70, Glass and glassware, Glass and glassware.
+71," Pearls, precious stones, metals, coins, etc"," Natural/cultured pearls, prec stones &  metals, coin etc"
+72, Iron and steel, Iron and steel.
+73, Articles of iron or steel, Articles of iron or steel.
+74, Copper and articles thereof, Copper and articles thereof.
+75, Nickel and articles thereof, Nickel and articles thereof.
+76, Aluminium and articles thereof, Aluminium and articles thereof.
+78, Lead and articles thereof, Lead and articles thereof.
+79, Zinc and articles thereof, Zinc and articles thereof.
+80, Tin and articles thereof, Tin and articles thereof.
+81," Other base metals, cermets, articles thereof", Other base metals; cermets; articles  thereof.
+82," Tools, implements, cutlery, etc of base metal"," Tool, implement, cutlery, spoon & fork,  of base mtl etc"
+83, Miscellaneous articles of base metal, Miscellaneous articles of base metal.
+84," Nuclear reactors, boilers, machinery, etc"," Nuclear reactors, boilers, mchy & mech  appliance; parts"
+85," Electrical, electronic equipment", Electrical mchy equip parts thereof;  sound recorder etc
+86," Railway, tramway locomotives, rolling stock, equipmen"," Railw/tramw locom, rolling-stock & parts  thereof; etc"
+87," Vehicles other than railway, tramway"," Vehicles o/t railw/tramw roll-stock, pts  & accessories"
+88," Aircraft, spacecraft, and parts thereof"," Aircraft, spacecraft, and parts thereof."
+89," Ships, boats and other floating structures"," Ships, boats and floating structures."
+90," Optical, photo, technical, medical, etc apparatus"," Optical, photo, cine, meas, checking,  precision, etc"
+91, Clocks and watches and parts thereof, Clocks and watches and parts thereof.
+92," Musical instruments, parts and accessories", Musical instruments; parts and access of  such articles
+93," Arms and ammunition, parts and accessories thereof", Arms and ammunition; parts and  accessories thereof.
+94," Furniture, lighting, signs, prefabricated buildings"," Furniture; bedding, mattress, matt  support, cushion etc"
+95," Toys, games, sports requisites"," Toys, games & sports requisites; parts &  access thereof"
+96, Miscellaneous manufactured articles, Miscellaneous manufactured articles.
+99, Commodities not specified according to kind, Commodities not specified according to kind
+catalog_level1_name,catalog_level1_desc,catalog_level1_num
+ Live animals, Live animals,01
+ Meat and edible meat offal, Meat and edible meat offal,02
+" Fish, crustaceans, molluscs, aquatic invertebrates ne"," Fish & crustacean, mollusc & other  aquatic invertebrate",03
+" Products of animal origin, nes"," Products of animal origin, nes or  included.",05
+" Live trees, plants, bulbs, roots, cut flowers etc"," Live tree & other plant; bulb, root; cut  flowers etc",06
+ Edible vegetables and certain roots and tubers, Edible vegetables and certain roots and  tubers.,07
+" Edible fruit, nuts, peel of citrus fruit, melons", Edible fruit and nuts; peel of citrus  fruit or melons.,08
+" Coffee, tea, mate and spices"," Coffee, tea, matF and spices.",09
+ Cereals, Cereals,10
+" Milling products, malt, starches, inulin, wheat glute", Prod.mill.indust; malt; starches;  inulin; wheat gluten,11
+" Oil seed, oleagic fruits, grain, seed, fruit, etc, ne"," Oil seed, oleagi fruits; miscell grain,  seed, fruit etc",12
+" Lac, gums, resins, vegetable saps and extracts nes"," Lac; gums, resins & other vegetable saps  & extracts.",13
+" Vegetable plaiting materials, vegetable products nes", Vegetable plaiting materials; vegetable  products nes,14
+" Animal,vegetable fats and oils, cleavage products, et", Animal/veg fats & oils & their cleavage  products; etc,15
+" Meat, fish and seafood food preparations nes"," Prep of meat, fish or crustaceans,  molluscs etc",16
+ Sugars and sugar confectionery, Sugars and sugar confectionery.,17
+ Cocoa and cocoa preparations, Cocoa and cocoa preparations.,18
+" Vegetable, fruit, nut, etc food preparations"," Prep of vegetable, fruit, nuts or other  parts of plants",20
+ Miscellaneous edible preparations, Miscellaneous edible preparations.,21
+" Beverages, spirits and vinegar"," Beverages, spirits and vinegar.",22
+" Residues, wastes of food industry, animal fodder", Residues & waste from the food indust;  prepr ani fodder,23
+ Tobacco and manufactured tobacco substitutes, Tobacco and manufactured tobacco substitutes,24
+" Salt, sulphur, earth, stone, plaster, lime and cement", Salt; sulphur; earth & ston; plastering  mat; lime & cem,25
+" Ores, slag and ash"," Ores, slag and ash.",26
+" Mineral fuels, oils, distillation products, etc"," Mineral fuels, oils & product of their  distillation;etc",27
+" Inorganic chemicals, precious metal compound, isotope"," Inorgn chem; compds of prec mtl,  radioact elements etc",28
+ Organic chemicals, Organic chemicals.,29
+ Pharmaceutical products, Pharmaceutical products.,30
+ Fertilizers, Fertilisers.,31
+" Tanning, dyeing extracts, tannins, derivs,pigments et", Tanning/dyeing extract; tannins &  derivs; pigm etc,32
+" Essential oils, perfumes, cosmetics, toileteries"," Essential oils & resinoids; perf,  cosmetic/toilet prep",33
+" Soaps, lubricants, waxes, candles, modelling pastes"," Soap, organic surface-active agents,  washing prep, etc",34
+" Albuminoids, modified starches, glues, enzymes", Albuminoidal subs; modified starches;  glues; enzymes.,35
+" Explosives, pyrotechnics, matches, pyrophorics, etc", Explosives; pyrotechnic prod; matches;  pyrop alloy; etc,36
+ Photographic or cinematographic goods, Photographic or cinematographic goods.,37
+ Miscellaneous chemical products, Miscellaneous chemical products.,38
+ Plastics and articles thereof, Plastics and articles thereof.,39
+ Rubber and articles thereof, Rubber and articles thereof.,40
+ Raw hides and skins (other than furskins) and leather, Raw hides and skins (other than  furskins) and leather.,41
+" Articles of leather, animal gut, harness, travel good", Articles of leather; saddlery/harness;  travel goods etc,42
+" Furskins and artificial fur, manufactures thereof", Furskins and artificial fur;  manufactures thereof.,43
+" Wood and articles of wood, wood charcoal", Wood and articles of wood; wood  charcoal.,44
+ Cork and articles of cork, Cork and articles of cork.,45
+" Manufactures of plaiting material, basketwork, etc."," Manufactures of straw, esparto/other  plaiting mat; etc",46
+" Pulp of wood, fibrous cellulosic material, waste etc", Pulp of wood/of other fibrous cellulosic  mat; waste etc,47
+" Paper & paperboard, articles of pulp, paper and board"," Paper & paperboard; art of paper pulp,  paper/paperboard",48
+" Printed books, newspapers, pictures etc"," Printed books, newspapers, pictures &  other product etc",49
+ Silk, Silk.,50
+" Wool, animal hair, horsehair yarn and fabric thereof"," Wool, fine/coarse animal hair, horsehair  yarn & fabric",51
+ Cotton, Cotton.,52
+" Vegetable textile fibres nes, paper yarn, woven fabri", Other vegetable textile fibres; paper  yarn & woven fab,53
+ manmade filaments, Man-made filaments.,54
+ manmade staple fibres, Man-made staple fibres.,55
+" Wadding, felt, nonwovens, yarns, twine, cordage, etc"," Wadding, felt & nonwoven; yarns; twine,  cordage, etc",56
+ Carpets and other textile floor coverings, Carpets and other textile floor  coverings.,57
+" Special woven or tufted fabric, lace, tapestry etc", Special woven fab; tufted tex fab; lace;  tapestries etc,58
+" Impregnated, coated or laminated textile fabric"," Impregnated, coated, cover/laminated  textile fabric etc",59
+ Knitted or crocheted fabric, Knitted or crocheted fabrics.,60
+" Articles of apparel, accessories, knit or crochet"," Art of apparel & clothing access,  knitted or crocheted.",61
+" Articles of apparel, accessories, not knit or crochet"," Art of apparel & clothing access, not  knitted/crocheted",62
+" Other made textile articles, sets, worn clothing etc", Other made up textile articles; sets;  worn clothing etc,63
+" Footwear, gaiters and the like, parts thereof"," Footwear, gaiters and the like; parts of  such articles.",64
+ Headgear and parts thereof, Headgear and parts thereof.,65
+" Umbrellas, walking-sticks, seat-sticks, whips, etc"," Umbrellas, walking-sticks, seat-sticks,  whips, etc",66
+" Bird skin, feathers, artificial flowers, human hair", Prepr feathers & down; arti flower;  articles human hair,67
+" Stone, plaster, cement, asbestos, mica, etc articles"," Art of stone, plaster, cement, asbestos,  mica/sim mat",68
+ Ceramic products, Ceramic products.,69
+ Glass and glassware, Glass and glassware.,70
+" Pearls, precious stones, metals, coins, etc"," Natural/cultured pearls, prec stones &  metals, coin etc",71
+ Iron and steel, Iron and steel.,72
+ Articles of iron or steel, Articles of iron or steel.,73
+ Copper and articles thereof, Copper and articles thereof.,74
+ Nickel and articles thereof, Nickel and articles thereof.,75
+ Aluminium and articles thereof, Aluminium and articles thereof.,76
+ Lead and articles thereof, Lead and articles thereof.,78
+ Zinc and articles thereof, Zinc and articles thereof.,79
+ Tin and articles thereof, Tin and articles thereof.,80
+" Other base metals, cermets, articles thereof", Other base metals; cermets; articles  thereof.,81
+" Tools, implements, cutlery, etc of base metal"," Tool, implement, cutlery, spoon & fork,  of base mtl etc",82
+ Miscellaneous articles of base metal, Miscellaneous articles of base metal.,83
+" Nuclear reactors, boilers, machinery, etc"," Nuclear reactors, boilers, mchy & mech  appliance; parts",84
+" Electrical, electronic equipment", Electrical mchy equip parts thereof;  sound recorder etc,85
+" Railway, tramway locomotives, rolling stock, equipmen"," Railw/tramw locom, rolling-stock & parts  thereof; etc",86
+" Vehicles other than railway, tramway"," Vehicles o/t railw/tramw roll-stock, pts  & accessories",87
+" Aircraft, spacecraft, and parts thereof"," Aircraft, spacecraft, and parts thereof.",88
+" Ships, boats and other floating structures"," Ships, boats and floating structures.",89
+" Optical, photo, technical, medical, etc apparatus"," Optical, photo, cine, meas, checking,  precision, etc",90
+ Clocks and watches and parts thereof, Clocks and watches and parts thereof.,91
+" Musical instruments, parts and accessories", Musical instruments; parts and access of  such articles,92
+" Arms and ammunition, parts and accessories thereof", Arms and ammunition; parts and  accessories thereof.,93
+" Furniture, lighting, signs, prefabricated buildings"," Furniture; bedding, mattress, matt  support, cushion etc",94
+" Toys, games, sports requisites"," Toys, games & sports requisites; parts &  access thereof",95
+ Miscellaneous manufactured articles, Miscellaneous manufactured articles.,96
+ Commodities not specified according to kind, Commodities not specified according to kind,99
+catalog_level1_name,catalog_level1_num,catalog_level1_desc
+ Live animals,01, Live animals
+ Meat and edible meat offal,02, Meat and edible meat offal
+" Fish, crustaceans, molluscs, aquatic invertebrates ne",03," Fish & crustacean, mollusc & other  aquatic invertebrate"
+" Products of animal origin, nes",05," Products of animal origin, nes or  included."
+" Live trees, plants, bulbs, roots, cut flowers etc",06," Live tree & other plant; bulb, root; cut  flowers etc"
+ Edible vegetables and certain roots and tubers,07, Edible vegetables and certain roots and  tubers.
+" Edible fruit, nuts, peel of citrus fruit, melons",08, Edible fruit and nuts; peel of citrus  fruit or melons.
+" Coffee, tea, mate and spices",09," Coffee, tea, matF and spices."
+ Cereals,10, Cereals
+" Milling products, malt, starches, inulin, wheat glute",11, Prod.mill.indust; malt; starches;  inulin; wheat gluten
+" Oil seed, oleagic fruits, grain, seed, fruit, etc, ne",12," Oil seed, oleagi fruits; miscell grain,  seed, fruit etc"
+" Lac, gums, resins, vegetable saps and extracts nes",13," Lac; gums, resins & other vegetable saps  & extracts."
+" Vegetable plaiting materials, vegetable products nes",14, Vegetable plaiting materials; vegetable  products nes
+" Animal,vegetable fats and oils, cleavage products, et",15, Animal/veg fats & oils & their cleavage  products; etc
+" Meat, fish and seafood food preparations nes",16," Prep of meat, fish or crustaceans,  molluscs etc"
+ Sugars and sugar confectionery,17, Sugars and sugar confectionery.
+ Cocoa and cocoa preparations,18, Cocoa and cocoa preparations.
+" Vegetable, fruit, nut, etc food preparations",20," Prep of vegetable, fruit, nuts or other  parts of plants"
+ Miscellaneous edible preparations,21, Miscellaneous edible preparations.
+" Beverages, spirits and vinegar",22," Beverages, spirits and vinegar."
+" Residues, wastes of food industry, animal fodder",23, Residues & waste from the food indust;  prepr ani fodder
+ Tobacco and manufactured tobacco substitutes,24, Tobacco and manufactured tobacco substitutes
+" Salt, sulphur, earth, stone, plaster, lime and cement",25, Salt; sulphur; earth & ston; plastering  mat; lime & cem
+" Ores, slag and ash",26," Ores, slag and ash."
+" Mineral fuels, oils, distillation products, etc",27," Mineral fuels, oils & product of their  distillation;etc"
+" Inorganic chemicals, precious metal compound, isotope",28," Inorgn chem; compds of prec mtl,  radioact elements etc"
+ Organic chemicals,29, Organic chemicals.
+ Pharmaceutical products,30, Pharmaceutical products.
+ Fertilizers,31, Fertilisers.
+" Tanning, dyeing extracts, tannins, derivs,pigments et",32, Tanning/dyeing extract; tannins &  derivs; pigm etc
+" Essential oils, perfumes, cosmetics, toileteries",33," Essential oils & resinoids; perf,  cosmetic/toilet prep"
+" Soaps, lubricants, waxes, candles, modelling pastes",34," Soap, organic surface-active agents,  washing prep, etc"
+" Albuminoids, modified starches, glues, enzymes",35, Albuminoidal subs; modified starches;  glues; enzymes.
+" Explosives, pyrotechnics, matches, pyrophorics, etc",36, Explosives; pyrotechnic prod; matches;  pyrop alloy; etc
+ Photographic or cinematographic goods,37, Photographic or cinematographic goods.
+ Miscellaneous chemical products,38, Miscellaneous chemical products.
+ Plastics and articles thereof,39, Plastics and articles thereof.
+ Rubber and articles thereof,40, Rubber and articles thereof.
+ Raw hides and skins (other than furskins) and leather,41, Raw hides and skins (other than  furskins) and leather.
+" Articles of leather, animal gut, harness, travel good",42, Articles of leather; saddlery/harness;  travel goods etc
+" Furskins and artificial fur, manufactures thereof",43, Furskins and artificial fur;  manufactures thereof.
+" Wood and articles of wood, wood charcoal",44, Wood and articles of wood; wood  charcoal.
+ Cork and articles of cork,45, Cork and articles of cork.
+" Manufactures of plaiting material, basketwork, etc.",46," Manufactures of straw, esparto/other  plaiting mat; etc"
+" Pulp of wood, fibrous cellulosic material, waste etc",47, Pulp of wood/of other fibrous cellulosic  mat; waste etc
+" Paper & paperboard, articles of pulp, paper and board",48," Paper & paperboard; art of paper pulp,  paper/paperboard"
+" Printed books, newspapers, pictures etc",49," Printed books, newspapers, pictures &  other product etc"
+ Silk,50, Silk.
+" Wool, animal hair, horsehair yarn and fabric thereof",51," Wool, fine/coarse animal hair, horsehair  yarn & fabric"
+ Cotton,52, Cotton.
+" Vegetable textile fibres nes, paper yarn, woven fabri",53, Other vegetable textile fibres; paper  yarn & woven fab
+ manmade filaments,54, Man-made filaments.
+ manmade staple fibres,55, Man-made staple fibres.
+" Wadding, felt, nonwovens, yarns, twine, cordage, etc",56," Wadding, felt & nonwoven; yarns; twine,  cordage, etc"
+ Carpets and other textile floor coverings,57, Carpets and other textile floor  coverings.
+" Special woven or tufted fabric, lace, tapestry etc",58, Special woven fab; tufted tex fab; lace;  tapestries etc
+" Impregnated, coated or laminated textile fabric",59," Impregnated, coated, cover/laminated  textile fabric etc"
+ Knitted or crocheted fabric,60, Knitted or crocheted fabrics.
+" Articles of apparel, accessories, knit or crochet",61," Art of apparel & clothing access,  knitted or crocheted."
+" Articles of apparel, accessories, not knit or crochet",62," Art of apparel & clothing access, not  knitted/crocheted"
+" Other made textile articles, sets, worn clothing etc",63, Other made up textile articles; sets;  worn clothing etc
+" Footwear, gaiters and the like, parts thereof",64," Footwear, gaiters and the like; parts of  such articles."
+ Headgear and parts thereof,65, Headgear and parts thereof.
+" Umbrellas, walking-sticks, seat-sticks, whips, etc",66," Umbrellas, walking-sticks, seat-sticks,  whips, etc"
+" Bird skin, feathers, artificial flowers, human hair",67, Prepr feathers & down; arti flower;  articles human hair
+" Stone, plaster, cement, asbestos, mica, etc articles",68," Art of stone, plaster, cement, asbestos,  mica/sim mat"
+ Ceramic products,69, Ceramic products.
+ Glass and glassware,70, Glass and glassware.
+" Pearls, precious stones, metals, coins, etc",71," Natural/cultured pearls, prec stones &  metals, coin etc"
+ Iron and steel,72, Iron and steel.
+ Articles of iron or steel,73, Articles of iron or steel.
+ Copper and articles thereof,74, Copper and articles thereof.
+ Nickel and articles thereof,75, Nickel and articles thereof.
+ Aluminium and articles thereof,76, Aluminium and articles thereof.
+ Lead and articles thereof,78, Lead and articles thereof.
+ Zinc and articles thereof,79, Zinc and articles thereof.
+ Tin and articles thereof,80, Tin and articles thereof.
+" Other base metals, cermets, articles thereof",81, Other base metals; cermets; articles  thereof.
+" Tools, implements, cutlery, etc of base metal",82," Tool, implement, cutlery, spoon & fork,  of base mtl etc"
+ Miscellaneous articles of base metal,83, Miscellaneous articles of base metal.
+" Nuclear reactors, boilers, machinery, etc",84," Nuclear reactors, boilers, mchy & mech  appliance; parts"
+" Electrical, electronic equipment",85, Electrical mchy equip parts thereof;  sound recorder etc
+" Railway, tramway locomotives, rolling stock, equipmen",86," Railw/tramw locom, rolling-stock & parts  thereof; etc"
+" Vehicles other than railway, tramway",87," Vehicles o/t railw/tramw roll-stock, pts  & accessories"
+" Aircraft, spacecraft, and parts thereof",88," Aircraft, spacecraft, and parts thereof."
+" Ships, boats and other floating structures",89," Ships, boats and floating structures."
+" Optical, photo, technical, medical, etc apparatus",90," Optical, photo, cine, meas, checking,  precision, etc"
+ Clocks and watches and parts thereof,91, Clocks and watches and parts thereof.
+" Musical instruments, parts and accessories",92, Musical instruments; parts and access of  such articles
+" Arms and ammunition, parts and accessories thereof",93, Arms and ammunition; parts and  accessories thereof.
+" Furniture, lighting, signs, prefabricated buildings",94," Furniture; bedding, mattress, matt  support, cushion etc"
+" Toys, games, sports requisites",95," Toys, games & sports requisites; parts &  access thereof"
+ Miscellaneous manufactured articles,96, Miscellaneous manufactured articles.
+ Commodities not specified according to kind,99, Commodities not specified according to kind
