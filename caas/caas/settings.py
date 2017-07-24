@@ -14,7 +14,7 @@ BOT_NAME = 'caas'
 SPIDER_MODULES = ['caas.spiders']
 NEWSPIDER_MODULE = 'caas.spiders'
 
-FEED_URI = u'file:///d://workspace/scrapy/caas/test.csv'
+FEED_URI = u'file:///d://workspace/scrapy/caas/catlog_level2.csv'
 FEED_FORMAT = 'CSV'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
