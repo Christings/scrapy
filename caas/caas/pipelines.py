@@ -35,10 +35,8 @@ class ComtradeCatalogPipeline(object):
             #     item['catalog_level1_name'], item['catalog_level1_desc'])
             # newsql = "insert into catalog_level1(catalog_level1_num)values('%s')" % (
             #     item['catalog_level1_num'])
-            # newsql = "insert into catalog_level2(catalog_level2_num,catalog_level2_name,catalog_level2_desc)values(%s','%s','%s')" % (
-            #     item['catalog_level2_num'], item['catalog_level2_name'], item['catalog_level2_desc'])
-            newsql = "insert into catalog_level2(catalog_level2_num)values('%s')" % (
-                item['catalog_level2_num'])
+            newsql = "insert into catalog_level2(catalog_level2_num,catalog_level2_name,catalog_level2_desc)values('%s','%s','%s')" % (
+                item['catalog_level2_num'], item['catalog_level2_name'], item['catalog_level2_desc'])
 
             print(newsql)
             ms.ExecNoQuery(newsql.encode('utf-8'))
