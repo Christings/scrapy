@@ -135,14 +135,16 @@ class ComtradeCatalogSpider(scrapy.Spider):
 
             # 提起三级分类的url，并进行请求
             temp1_level3_url = sel.xpath('td[1]/a/@href').extract()  # 提取二级分类的url
+            # print("url:", temp1_level3_url)
             if temp1_level3_url and temp1_level3_url[0] != 'rfCommoditiesList.aspx?px=H0&cc=TOTAL':
                 temp2_level3_url = ('').join(temp1_level3_url)
-                level3_url = "https://comtrade.un.org/db/mr/" + temp2_level3_url
-                # temp1_year=str(temp1_level2_url).split("?")[1]
-                # temp2_year=str(temp1_year).split("&")[0]
-                # year=temp2_year.replace("H0").
-                # print("temp1_level2_url:", level2_url)
-                yield scrapy.Request(level3_url, callback=self.parse_level3)
+                temp3_level3_url=str(temp2_level3_url).split("cc=")[1]
+                if temp3_level3_url>100:
+                    level3_url = "https://comtrade.un.org/db/mr/" + temp2_level3_url
+                    # temp2_year=str(temp1_year).split("&")[0]
+                    # year=temp2_year.replace("H0").
+                    print("temp1_level3_url:", level3_url)
+                    # yield scrapy.Request(level3_url, callback=self.parse_level3)
 
 
     def parse_level3(self, response):
