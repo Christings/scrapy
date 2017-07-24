@@ -14,6 +14,8 @@ class ComtradeCatalogItem(scrapy.Item):
 
     # 一级目录
     # catalog_level1_url = scrapy.Field()  # url
+
+    catalog_year = scrapy.Field()  # 年份
     catalog_level1_num = scrapy.Field()  # 编号
     catalog_level1_name = scrapy.Field()  # 名称
     catalog_level1_desc = scrapy.Field()  # 描述

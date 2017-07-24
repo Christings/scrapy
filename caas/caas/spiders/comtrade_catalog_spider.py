@@ -59,13 +59,48 @@ class ComtradeCatalogSpider(scrapy.Spider):
     def parse_level1(self, response):
         # selector = scrapy.Selector(response)
         # 一级分类的编号、名称、描述的原始数据
+
+        # year = response.xpath(
+        #     '//table[@id="pGrid"]/tbody/tr[2]/td/div[2]/span[@class="sTd"]').extract()
+        # print("2333:", year)
         for sel in response.xpath('//table[@id="dgPzCommodities"]/tr'):
             item = ComtradeCatalogItem()
+
+            year="1992"
+
+
             temp1_level1_num=sel.xpath('td[1]/a/text()').extract() #获得list的数据
             temp2_level1_num=('').join(temp1_level1_num)           #变成str类型
-            item["catalog_level1_num"]=temp2_level1_num
-            print('item["catalog_level1_num"]:',item["catalog_level1_num"])
 
+            temp1_level1 = sel.xpath('td[2]/text()').extract()  # 获得list的数据
+            del(temp1_level1[0]) #过滤空字段
+            if temp1_level1:
+                if temp1_level1[0]!=": ALL COMMODITIES": #过滤掉第一行
+                    # print("lala:", temp1_level1)
+                    item["catalog_level1_name"]=str(temp1_level1[0]).replace(":","") #一级分类的名字
+                    temp1_catalog_level1_desc=str(temp1_level1[1]).replace(":","")
+                    item["catalog_level1_desc"]=temp1_catalog_level1_desc.replace("'","") #一级分类的描述,因为有单引号，导致某些数据插入失败。
+                    # item["catalog_year"]=year
+                    # print("lala:",item["catalog_level1_name"],"lala54:",item["catalog_level1_desc"])
+                    yield item
+            if temp2_level1_num:
+                temp3_level1_num=temp2_level1_num.replace(u"\xa0\xa0",u"") #终于把字符串中的空格去掉了，前面加u
+                item["catalog_level1_num"]=temp3_level1_num  #一级分类的目录
+                item["catalog_year"]=year
+                # print('item["catalog_level1_num"]:',item["catalog_level1_num"])
+                yield item
+
+            temp1_level2_url = sel.xpath('td[1]/a/@href').extract()  # 提取二级分类的url
+            if temp1_level2_url and temp1_level2_url[0] != 'rfCommoditiesList.aspx?px=H0&cc=TOTAL':
+                level2_url = temp1_level2_url;
+                # temp1_year=str(temp1_level2_url).split("?")[1]
+                # temp2_year=str(temp1_year).split("&")[0]
+                # year=temp2_year.replace("H0").
+                # print("temp1_level2_url:", level2_url)
+                yield scrapy.Request(level2_url,callback=self.parse_level2)
+
+        # 解析二级目录
+        def parse_level2(self, response):
 
 
         # catalog_level1_num_primary = selector.xpath('//table[@id="dgPzCommodities"]/tr/td[1]/a/text()').extract()
