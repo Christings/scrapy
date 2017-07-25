@@ -22,8 +22,6 @@ class ComtradeCatalogItem(scrapy.Item):
 
 
 class ComtradeCatalogLevel2Item(scrapy.Item):
-
-
     # 二级目录
     # catalog_level2_url = scrapy.Field()
     catalog_level2_num = scrapy.Field()
@@ -31,11 +29,14 @@ class ComtradeCatalogLevel2Item(scrapy.Item):
     catalog_level2_desc = scrapy.Field()
 
 
-# 三级目录
-# catalog_level3_url = scrapy.Field()
-# catalog_level3_num = scrapy.Field()
-# catalog_level3_name = scrapy.Field()
-# catalog_level3_desc = scrapy.Field()
+class ComtradeCatalogLevel3Item(scrapy.Item):
+
+
+    # 三级目录
+    catalog_level3_url = scrapy.Field()
+    catalog_level3_num = scrapy.Field()
+    catalog_level3_name = scrapy.Field()
+    catalog_level3_desc = scrapy.Field()
 
 
 class CaasItem(scrapy.Item):

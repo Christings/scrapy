@@ -5,7 +5,7 @@ import scrapy
 import requests
 import re
 from caas.items import ComtradeCatalogItem
-from caas.items import ComtradeCatalogLevel2Item
+# from caas.items import ComtradeCatalogLevel2Item
 
 
 class ComtradeCatalogSpider(scrapy.Spider):

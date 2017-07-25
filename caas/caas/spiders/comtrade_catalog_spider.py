@@ -6,6 +6,7 @@ import requests
 import re
 from caas.items import ComtradeCatalogItem
 from caas.items import ComtradeCatalogLevel2Item
+from caas.items import ComtradeCatalogLevel3Item
 
 
 class ComtradeCatalogSpider(scrapy.Spider):
@@ -35,25 +36,6 @@ class ComtradeCatalogSpider(scrapy.Spider):
         # self.start_url.split("&")[0]
         yield scrapy.Request(url=self.start_url, callback=self.parse_level1, cookies=self.cookie, headers=self.headers,
                              meta=self.meta)
-
-    # 一级目录最终存储的地方（编号，名称，描述）
-    # cat_level1_num = []
-    # cat_level1_name = []
-    # cat_level1_desc = []
-    # 二级目录最终存储的位置（编号，名称，描述）
-    cat_level2_url = []
-    cat_level2_num = []
-    cat_level2_name = []
-    cat_level2_desc = []
-    # 三级目录最终存储的位置（编号，名称，描述）
-    cat_level3_url = []
-    cat_level3_num = []
-    cat_level3_name = []
-    cat_level3_desc = []
-
-    a = []
-    b = []
-    c = []
 
     # 解析一级目录
     def parse_level1(self, response):
@@ -139,16 +121,42 @@ class ComtradeCatalogSpider(scrapy.Spider):
             if temp1_level3_url and temp1_level3_url[0] != 'rfCommoditiesList.aspx?px=H0&cc=TOTAL':
                 temp2_level3_url = ('').join(temp1_level3_url)
                 temp3_level3_url=str(temp2_level3_url).split("cc=")[1]
-                if temp3_level3_url>100:
+                if float(temp3_level3_url)>100:   #过滤掉二级的url，只留下三级的url进行请求
                     level3_url = "https://comtrade.un.org/db/mr/" + temp2_level3_url
-                    # temp2_year=str(temp1_year).split("&")[0]
-                    # year=temp2_year.replace("H0").
-                    print("temp1_level3_url:", level3_url)
-                    # yield scrapy.Request(level3_url, callback=self.parse_level3)
+                    # print("temp1_level3_url:", level3_url)
+                    yield scrapy.Request(level3_url, callback=self.parse_level3)
 
-
+    #解析三级目录
     def parse_level3(self, response):
-        pass
+        for sel in response.xpath('//table[@id="dgPzCommodities"]/tr'):
+
+            item = ComtradeCatalogLevel3Item()
+
+            temp1_level3_num = sel.xpath('td[1]/a/text()').extract()  # 获得list的数据
+            temp2_level3_num = ('').join(temp1_level3_num)  # 变成str类型
+            # print("temp2_level3_num:",temp2_level3_num)
+
+
+            temp1_level3 = sel.xpath('td[2]/text()').extract()  # 获得list的数据
+            print("temp1_level2:",temp1_level3)
+
+            if temp2_level3_num:
+                temp3_level3_num = temp2_level3_num.replace(u"\xa0\xa0", u"")  # 终于把字符串中的空格去掉了，前面加u
+                if temp3_level3_num and temp3_level3_num != "TOTAL" and len(temp3_level3_num)!=2   :  #过滤掉空字符串、tatal一级两位数的目录，此处不能用or，否则只有过滤掉第一个为真的字段。
+                    item["catalog_level3_num"] = temp3_level3_num.replace("'", "")  # 二级分类的目录
+                    print('item["catalog_level3_num"]:', item["catalog_level3_num"])
+                    yield item
+
+            del (temp1_level3[0])  # 删除第一个字段
+            if temp1_level3:  # 过滤空字段
+                if temp1_level3[0] != ": ALL COMMODITIES":  # 过滤掉第一行
+                    # print("lala:", temp1_level1)
+                    item["catalog_level3_name"] = str(temp1_level3[0]).replace(":", "")  # 二级分类的名字
+                    temp1_catalog_level3_desc = str(temp1_level3[1]).replace(":", "")
+                    item["catalog_level3_desc"] = temp1_catalog_level3_desc.replace("'","")  # 二级分类的描述,因为有单引号，导致某些数据插入失败。
+                    # item["catalog_year"]=year
+                    # print("lala:",item["catalog_level1_name"],"lala54:",item["catalog_level1_desc"])
+                    yield item
 
         # catalog_level1_num_primary = selector.xpath('//table[@id="dgPzCommodities"]/tr/td[1]/a/text()').extract()
         # catalog_level1_primary = selector.xpath(u'//table[@id="dgPzCommodities"]/tr/td[2]/text()').extract()
