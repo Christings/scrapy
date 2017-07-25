@@ -18,7 +18,19 @@ class ComtradeCatalogSpider(scrapy.Spider):
     # 3.三级子目录url
     #   https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=H0&cc=0101
 
-    start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=H0&cc=TOTAL"
+    # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=H0&cc=TOTAL"     #1992
+    # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=H1&cc=TOTAL"     #1996
+    # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=H2&cc=TOTAL"     #2002
+    # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=H3&cc=TOTAL"     #2007
+    # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=H4&cc=TOTAL"     #2012
+
+    # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=BE&cc=TOTAL"     #BEC
+
+    # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=S1&cc=TOTAL"     #Rev.1
+    # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=S2&cc=TOTAL"       #Rev.2
+    # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=S3&cc=TOTAL"       #Rev.3
+    start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=S4&cc=TOTAL"       #Rev.4
+
 
     cookie = settings['COOKIES']
 
@@ -48,7 +60,7 @@ class ComtradeCatalogSpider(scrapy.Spider):
         for sel in response.xpath('//table[@id="dgPzCommodities"]/tr'):
             item = ComtradeCatalogItem()
 
-            year="1992"
+            # year="1992"
 
             temp1_level1_num=sel.xpath('td[1]/a/text()').extract() #获得list的数据
             temp2_level1_num=('').join(temp1_level1_num)           #变成str类型
@@ -67,7 +79,7 @@ class ComtradeCatalogSpider(scrapy.Spider):
             if temp2_level1_num:
                 temp3_level1_num=temp2_level1_num.replace(u"\xa0\xa0",u"") #终于把字符串中的空格去掉了，前面加u
                 item["catalog_level1_num"]=temp3_level1_num  #一级分类的目录
-                item["catalog_year"]=year
+                # item["catalog_year"]=year
                 # print('item["catalog_level1_num"]:',item["catalog_level1_num"])
                 yield item
 
@@ -120,11 +132,11 @@ class ComtradeCatalogSpider(scrapy.Spider):
             # print("url:", temp1_level3_url)
             if temp1_level3_url and temp1_level3_url[0] != 'rfCommoditiesList.aspx?px=H0&cc=TOTAL':
                 temp2_level3_url = ('').join(temp1_level3_url)
-                temp3_level3_url=str(temp2_level3_url).split("cc=")[1]
-                if float(temp3_level3_url)>100:   #过滤掉二级的url，只留下三级的url进行请求
-                    level3_url = "https://comtrade.un.org/db/mr/" + temp2_level3_url
-                    # print("temp1_level3_url:", level3_url)
-                    yield scrapy.Request(level3_url, callback=self.parse_level3)
+                # temp3_level3_url=str(temp2_level3_url).split("cc=")[1]
+                # if float(temp3_level3_url)>100:   #过滤掉二级的url，只留下三级的url进行请求
+                level3_url = "https://comtrade.un.org/db/mr/" + temp2_level3_url
+                # print("temp1_level3_url:", level3_url)
+                yield scrapy.Request(level3_url, callback=self.parse_level3)
 
     #解析三级目录
     def parse_level3(self, response):
