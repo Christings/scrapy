@@ -37,13 +37,25 @@ class ComtradeCatalogLevel3Item(scrapy.Item):
     catalog_level3_desc = scrapy.Field()
 
 
+class ComtradeCatalogLevel4Item(scrapy.Item):
+    # 四级目录
+    catalog_level4_url = scrapy.Field()
+    catalog_level4_num = scrapy.Field()
+    catalog_level4_name = scrapy.Field()
+    catalog_level4_desc = scrapy.Field()
+
+
 class FaoCountriesItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    geo_country1 = scrapy.Field()
-    geo_country2 = scrapy.Field()
-    geo_country3 = scrapy.Field()
+    # geo_country1 = scrapy.Field()
+    # geo_country2 = scrapy.Field()
+    # geo_country3 = scrapy.Field()
+    #
+    # eco_country1 = scrapy.Field()
+    # eco_country2 = scrapy.Field()
+    # eco_country3 = scrapy.Field()
 
-    eco_country1 = scrapy.Field()
-    eco_country2 = scrapy.Field()
-    eco_country3 = scrapy.Field()
+    first=scrapy.Field()
+    second=scrapy.Field()
+    third=scrapy.Field()

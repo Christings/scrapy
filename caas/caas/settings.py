@@ -14,8 +14,8 @@ BOT_NAME = 'caas'
 SPIDER_MODULES = ['caas.spiders']
 NEWSPIDER_MODULE = 'caas.spiders'
 
-FEED_URI = u'file:///d://workspace/scrapy/caas/catlog_level2.csv'
-FEED_FORMAT = 'CSV'
+FEED_URI = u'file:///d://workspace/scrapy/caas/fao.json'
+FEED_FORMAT = 'json'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'caas (+http://www.yourdomain.com)'
@@ -47,9 +47,9 @@ COOKIES_ENABLED = True
 # }
 
 COOKIES = {
-    "ASP.NET_SessionId": "rj5gviu21b3iku55zux2cvyd",
+    "ASP.NET_SessionId": "lsbelc55alj2yi55r4rilu45",
     "hadReadMeE": "Q6o2adA7vxvchXbHpuQ++w==",
-    "comtrade3": "70EB54ED99875CD846DEA27EF683666CB73E8249F416943ADBAEC578D05E9F5A08C4BCB60331A5C178487980CA2069CD3F07DB90A0909C8408047C69C1AE6DE54AD8D53A489FB8D08B9BE1BA0AECF7A85491D0E2A3FE4F9A",
+    "comtrade3": "7C13F6D05B4E90046940096D5A4F67AEFBB7AAE1516DDFB35384BE53D1C53EBE22A357A8E4F22320F0CFCBA636136723810281F88B3FA8FD165024C3A522F3E333F580B7A550960B51378F2C514EA4C9BB8A809872989DE5",
     "_ga": "GA1.2.1958648564.1500279176",
     "_gid": "GA1.2.88170259.1500279176",
     "_gat": "1"
@@ -72,9 +72,13 @@ COOKIES = {
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
-# DOWNLOADER_MIDDLEWARES = {
-#    'caas.middlewares.MyCustomDownloaderMiddleware': 543,
-# }
+# 下载中间件
+DOWNLOADER_MIDDLEWARES = {
+   # 'caas.middlewares.MyCustomDownloaderMiddleware': 543,
+   'caas.downloadwebkit.WebkitDownloader': 543,   # 在FAO中使用selenium添加的下载浏览器网页源码中间件
+   'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware':None,#禁止内置的中间件
+
+}
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
@@ -105,8 +109,8 @@ ITEM_PIPELINES = {
 # Enable and configure HTTP caching (disabled by default)
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
 # scrapy会缓存Requests，当再次请求时，如果存在缓存文档则返回缓存文档，而不是去网站请求，这样既加快了本地调试速度，也减轻了网站的压力。
-HTTPCACHE_ENABLED = True
-HTTPCACHE_EXPIRATION_SECS = 0
-HTTPCACHE_DIR = 'httpcache'
-HTTPCACHE_IGNORE_HTTP_CODES = []
-HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+# HTTPCACHE_ENABLED = True
+# HTTPCACHE_EXPIRATION_SECS = 0
+# HTTPCACHE_DIR = 'httpcache'
+# HTTPCACHE_IGNORE_HTTP_CODES = []
+# HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
