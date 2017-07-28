@@ -1,8 +1,8 @@
 # -*- coding:utf-8 -*-
 import scrapy
-from caas.items import FaoCountriesItem
 from bs4 import BeautifulSoup
-from caas.items import FaoCountriesItem
+from ..items import FaoCountriesItem
+import time
 
 
 class FaoCountriesSpier(scrapy.Spider):
@@ -15,71 +15,54 @@ class FaoCountriesSpier(scrapy.Spider):
 
     def parse(self, response):
         # 通过selenium打开chrome内核，从而获得网页加载后的源代码。
-        # sel = scrapy.Selector(response)
-        print("1:", response.body)
+        # print("1:", response.body)
 
-        # sel=scrapy.Selector(response.body).xpath('div[id="groups-list"]')
-        # for each in sel.xpath('div/h3/text()').extract():
-        #     print(each)
-        a=response.xpath('//div[@id="groups-list"]/div/h3/text()').extract()
-        b=response.xpath('//div[@id="groups-list"]/div[1]/div/h4/text()').extract()
-        c=response.xpath('//div[@id="groups-list"]/div[1]/div/ul/li/a/text()').extract()
-        # print("y:",y)
-        item=FaoCountriesItem()
-        # x=[]
+        a = response.xpath('//div[@id="groups-list"]/div/h3/text()').extract()  # 最外层三个
+        b = response.xpath('//div[@id="groups-list"]/div/div/h4/text()').extract()  # 中间层
+        c = response.xpath('//div[@id="groups-list"]/div/div/ul/li/a/text()').extract()  # 最里层
+        x = response.body
+        soup = BeautifulSoup(x, 'lxml')
+        secondtitles = soup.select("div.divgroup h4")
+
+        item = FaoCountriesItem()
         for each in a:
-            item["first"]=each
-            print(each)
-            if each=="Geographical Region":
-                item["second"]=b
-                print(item["second"])
-                item["third"]=c
-                print(item["third"])
-            # for i in b:
-            #     item["second"] = i
-            #     print("111:",i)
+            item["first"] = each
+            print("first:", each)
+            if each == a[0]:
+                # print("第一个")
+                for t in secondtitles:
+                    if 'geo' in t.get("rel"):
+                        ul_id = "ul_" + t.get("rel")
+                        # print(ul_id)
+                        item["second"] = t.string
+                        print("second:" + item["second"])
+                        content = soup.select("ul#" + ul_id + " li a")
+                        for i in content:
+                            item['third'] = i.string
 
-
-
-        # soup = BeautifulSoup(response.body, "lxml")
-
-        # print("11:",soup.find(id="groups-list" "div"))
-        # tags=soup.find_all("div",id_="groups-list")
-        # temp=soup.select('div')
-        # l1 = soup.select('div h3')
-        # l2 = soup.select('div.divgroup h4')
-        #
-        # l3 = soup.select('ul li a')
-        # #
-        # for i in l1:
-        #     print("1:",i.string)
-        #
-        #     # for j in l2:
-
-
-        # first=soup.select('#groups-list div h3')
-        # second=soup.select('#group-list div.divgroup')
-        # third=soup.select('#group-list div.divgroup ul li a')
-        # for i in first:
-        #     item=FaoCountriesItem()
-        #     item["first"]=i
-        #     print("1:",first.string)
-        #     for j in second:
-        #         # item = FaoCountriesItem()
-        #         item["second"] = j
-        #         print("2:", second.string)
-        #         for k in third:
-        #             # item = FaoCountriesItem()
-        #             item["third"] = k
-        #             print("3:", third.string)
-
-
-        # second=soup.select("div.divgroup h4")
-        #
-        # for t in second:
-        #     ul_id="ul_"+t.get("rel")
-        #     se=t.string
-        #     print("se:",se)
-        #     content=soup.select("ul#"+ul_id+"li a")
-        #     for i in content:
-        #         print("xx:")
+                            yield item
+            if each == a[1]:
+                # print("第2个")
+                for t in secondtitles:
+                    if 'eco' in t.get("rel"):
+                        ul_id = "ul_" + t.get("rel")
+                        # print(ul_id)
+                        item["second"] = t.string
+                        print("second:" + item["second"])
+                        content = soup.select("ul#" + ul_id + " li a")
+                        for i in content:
+                            item['third'] = i.string
+                            print("third:", i.string)
+                            yield item
+            if each == a[2]:
+                # print("第3个")
+                for t in secondtitles:
+                    if 'spe' in t.get("rel"):
+                        ul_id = "ul_" + t.get("rel")
+                        # print(ul_id)
+                        item["second"] = t.string
+                        print("this is secondtitle:" + item["second"])
+                        content = soup.select("ul#" + ul_id + " li a")
+                        for i in content:
+                            item['third'] = i.string
+                            print("third:", i.string)
