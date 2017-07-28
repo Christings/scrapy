@@ -7,7 +7,14 @@
 
 import scrapy
 
+# 世界银行数据
+class WorldBankItem(scrapy.Item):
+    # 定义需要格式化的内容（或是需要保存到数据库的字段）
+    indi_url = scrapy.Field()  # 指标(indicator)的url的字段
+    indi_name = scrapy.Field()  # 指标(indicator)的名字
 
+
+# Comtrade数据
 class ComtradeCatalogItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
@@ -44,7 +51,7 @@ class ComtradeCatalogLevel4Item(scrapy.Item):
     catalog_level4_name = scrapy.Field()
     catalog_level4_desc = scrapy.Field()
 
-
+# FAO数据
 class FaoCountriesItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
@@ -56,6 +63,6 @@ class FaoCountriesItem(scrapy.Item):
     # eco_country2 = scrapy.Field()
     # eco_country3 = scrapy.Field()
 
-    first=scrapy.Field()
-    second=scrapy.Field()
-    third=scrapy.Field()
+    first = scrapy.Field()
+    second = scrapy.Field()
+    third = scrapy.Field()
