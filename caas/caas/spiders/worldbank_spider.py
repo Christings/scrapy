@@ -32,10 +32,10 @@ class WorldBankSpider(scrapy.Spider):
             # indi_url = str(temp_url)[:-12] + "downloadformat=excel"
             indi_url = str(temp_url).replace("view=chart", "downloadformat=excel")
             item["indi_url"] = indi_url.replace("'", "").replace("[", "").replace("]", '')
-            print('item["indi_url"]:', item["indi_url"])
+            # print('item["indi_url"]:', item["indi_url"])
 
             item["indi_name"] = i.xpath('a/text()').extract()
-            print('item["indi_name"]:', item["indi_name"])
+            # print('item["indi_name"]:', item["indi_name"])
             yield item
 
             url = indi_url.replace("'", "").replace("[", "").replace("]", '')
@@ -43,7 +43,7 @@ class WorldBankSpider(scrapy.Spider):
 
     # 下载excel文件
     def download_excel(self, response):
-        print("url:", response.url)
+        # print("url:", response.url)
         file_name_temp = response.url.split("/")[-1]
         file_name = file_name_temp.split("?")[-2]
         # print("file_name:", file_name)  # 存储的文件名称
