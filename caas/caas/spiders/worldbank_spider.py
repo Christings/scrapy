@@ -25,12 +25,32 @@ class WorldBankSpider(scrapy.Spider):
         indicators = selector.xpath('//*[@id="main"]/div[2]/section[@class="nav-item"]/ul/li')
         # content = indicators.xpath('')
         for i in indicators:
-            print(i)
+            # print(i)
             item = WorldBankItem()
-            temp_url = i.xpath('a/@href').extract()
-            indi_url = temp_url[:-10] + "downloadformat=excel"
+
+            temp_url = i.xpath('a/@href').extract()  # 得到的结果为list
+            # indi_url = str(temp_url)[:-12] + "downloadformat=excel"
+            indi_url = str(temp_url).replace("view=chart", "downloadformat=excel")
             item["indi_url"] = indi_url
-            print('item["indi_url"]:', item["indi_url"])
+            # print('item["indi_url"]:', item["indi_url"])
+
             item["indi_name"] = i.xpath('a/text()').extract()
-            print('item["indi_name"]:', item["indi_name"])
+            # print('item["indi_name"]:', item["indi_name"])
             yield item
+
+            url = indi_url.replace("'", "").replace("[", "").replace("]", '')
+            yield scrapy.Request(url="http://api.worldbank.org/v2/en" + url, callback=self.download_excel)
+
+    # 下载excel文件
+    def download_excel(self, response):
+        # print("url:", response.url)
+        file_name_temp = response.url.split("/")[-1]
+        file_name = file_name_temp.split("?")[-2]
+        # print("file_name:", file_name)  # 存储的文件名称
+        filename_location = r"D:\workspace\scrapy\caas\files\worldbankexcelfiles\%s.xls" % file_name
+
+        resp = requests.get(response.url)
+        output = open(filename_location, "wb")
+        output.write(resp.content)
+        output.close()
+        return None
