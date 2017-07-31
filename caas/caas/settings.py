@@ -14,8 +14,8 @@ BOT_NAME = 'caas'
 SPIDER_MODULES = ['caas.spiders']
 NEWSPIDER_MODULE = 'caas.spiders'
 
-FEED_URI = u'file:///d://workspace/scrapy/caas/fao.csv'
-FEED_FORMAT = 'CSV'
+# FEED_URI = u'file:///d://workspace/scrapy/caas/fao.csv'
+# FEED_FORMAT = 'CSV'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'caas (+http://www.yourdomain.com)'
@@ -90,6 +90,7 @@ DOWNLOADER_MIDDLEWARES = {
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'caas.pipelines.ComtradeCatalogPipeline': 300,
+    'caas.mysqlpipelines.pipelines.WorldBankPipeline': 1,
     # 'caas.pipelines.CaasPipeline': 300,
 }
 
@@ -114,3 +115,10 @@ ITEM_PIPELINES = {
 # HTTPCACHE_DIR = 'httpcache'
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# MySql数据库的配置信息
+MYSQL_HOSTS = 'localhost'
+MYSQL_DBNAME = 'caas'       # 数据库名字
+MYSQL_USER = 'root'         # 数据库账号
+MYSQL_PASSWORD = '421498'     # 数据库密码
+MYSQL_PORT = '3306'         # 数据库端口，在dbHelper中使用
