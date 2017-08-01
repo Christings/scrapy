@@ -14,7 +14,13 @@ class WorldBankItem(scrapy.Item):
     indi_name = scrapy.Field()  # 指标(indicator)的名字
 
 
-# Comtrade数据
+# Comtrade————CountryList数据
+class ComtradeCountryListItem(scrapy.Item):
+    country_code=scrapy.Field()  # 国家代号
+    country_name=scrapy.Field()  # 国家名称
+
+
+# Comtrade————CommodityList数据
 class ComtradeCatalogItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()

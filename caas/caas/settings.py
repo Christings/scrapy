@@ -91,6 +91,7 @@ DOWNLOADER_MIDDLEWARES = {
 ITEM_PIPELINES = {
     'caas.pipelines.ComtradeCatalogPipeline': 300,
     'caas.mysqlpipelines.pipelines.WorldBankPipeline': 1,
+    'caas.mysqlpipelines.pipelines.ComtradeCountryListPipeline': 1,
     # 'caas.pipelines.CaasPipeline': 300,
 }
 
