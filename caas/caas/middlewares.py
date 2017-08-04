@@ -6,6 +6,12 @@
 # http://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+import json
+import redis  # python操作redis的包
+import random
+from .useragent import agents
+from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware  # UserAgent中间件
+from scrapy.downloadermiddlewares.retry import RetryMiddleware  # 重试中间件
 
 
 class CaasSpiderMiddleware(object):
@@ -54,3 +60,10 @@ class CaasSpiderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+
+class UserAgentmiddleware(UserAgentMiddleware):
+    def process_request(self, request, spider):
+        # 当每个request通过下载中间件时，该方法被调用。
+        agent = random.choice(agents)
+        request.headers["User-Agent"] = agent
