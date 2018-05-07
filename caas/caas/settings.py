@@ -45,15 +45,26 @@ COOKIES_ENABLED = True
 #     "_gat": "1"
 #
 # }
+#
+# COOKIES = {
+#     "ASP.NET_SessionId": "imr5ebemxtezrparboig1uyq",
+#     "hadReadMeE": "Q6o2adA7vxvchXbHpuQ++w==",
+#     "comtrade3": "27BB138B988C4399D3E0348989B3CBD6369B7739F797FC316295649C85DD117105428F0D0EC2F99F806B949B7DDB2C572483C2B8C18AD5EDDF46EFEC6F36686204C14F25D95E629802FA487A6CFCF60FD029B8D6A7F0CB93",
+#     "_ga": "GA1.2.1958648564.1500279176",
+#     "_gid": "GA1.2.88170259.1500279176",
+#     "_gat": "1"
+# }
 
 COOKIES = {
-    "ASP.NET_SessionId": "imr5ebemxtezrparboig1uyq",
-    "hadReadMeE": "Q6o2adA7vxvchXbHpuQ++w==",
-    "comtrade3": "27BB138B988C4399D3E0348989B3CBD6369B7739F797FC316295649C85DD117105428F0D0EC2F99F806B949B7DDB2C572483C2B8C18AD5EDDF46EFEC6F36686204C14F25D95E629802FA487A6CFCF60FD029B8D6A7F0CB93",
-    "_ga": "GA1.2.1958648564.1500279176",
-    "_gid": "GA1.2.88170259.1500279176",
-    "_gat": "1"
+    "ASP.NET_SessionId": "u5c1cnfpyxwvkuihvjem44d1",
+    "_guid": "259852866.4038791253182556700.1506409954551.9514",
+    "Bf3%2bnvGZzxV%2bBqdrme8NTA%3d%3d": "RAg4NnxwxwJOQlqtYc1laA%3d%3d",
+    "monitor_count": "24"
 }
+
+# SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+# DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFDUPeFilter"
+# REDIS_URL = '//'
 
 # Disable Telnet Console (enabled by default)
 # TELNETCONSOLE_ENABLED = False
@@ -74,9 +85,9 @@ COOKIES = {
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 # 下载中间件
 DOWNLOADER_MIDDLEWARES = {
-   # 'caas.middlewares.MyCustomDownloaderMiddleware': 543,
-   'caas.downloadwebkit.WebkitDownloader': 543,   # 在FAO中使用selenium添加的下载浏览器网页源码中间件
-   'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware':None,#禁止内置的中间件
+    # 'caas.middlewares.MyCustomDownloaderMiddleware': 543,
+    'caas.downloadwebkit.WebkitDownloader': 543,  # 在FAO中使用selenium添加的下载浏览器网页源码中间件
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,  # 禁止内置的中间件
 
 }
 
@@ -119,7 +130,7 @@ ITEM_PIPELINES = {
 
 # MySql数据库的配置信息
 MYSQL_HOSTS = 'localhost'
-MYSQL_DBNAME = 'caas'       # 数据库名字
-MYSQL_USER = 'root'         # 数据库账号
-MYSQL_PASSWORD = '421498'     # 数据库密码
-MYSQL_PORT = '3306'         # 数据库端口，在dbHelper中使用
+MYSQL_DBNAME = 'caas'  # 数据库名字
+MYSQL_USER = 'root'  # 数据库账号
+MYSQL_PASSWORD = '421498'  # 数据库密码
+MYSQL_PORT = '3306'  # 数据库端口，在dbHelper中使用

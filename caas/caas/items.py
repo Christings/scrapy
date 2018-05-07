@@ -7,6 +7,7 @@
 
 import scrapy
 
+
 # 世界银行数据
 class WorldBankItem(scrapy.Item):
     # 定义需要格式化的内容（或是需要保存到数据库的字段）
@@ -16,8 +17,8 @@ class WorldBankItem(scrapy.Item):
 
 # Comtrade————CountryList数据
 class ComtradeCountryListItem(scrapy.Item):
-    country_code=scrapy.Field()  # 国家代号
-    country_name=scrapy.Field()  # 国家名称
+    country_code = scrapy.Field()  # 国家代号
+    country_name = scrapy.Field()  # 国家名称
 
 
 # Comtrade————CommodityList数据
@@ -57,6 +58,7 @@ class ComtradeCatalogLevel4Item(scrapy.Item):
     catalog_level4_name = scrapy.Field()
     catalog_level4_desc = scrapy.Field()
 
+
 # FAO数据
 class FaoCountriesItem(scrapy.Item):
     # define the fields for your item here like:
@@ -72,3 +74,4 @@ class FaoCountriesItem(scrapy.Item):
     first = scrapy.Field()
     second = scrapy.Field()
     third = scrapy.Field()
+

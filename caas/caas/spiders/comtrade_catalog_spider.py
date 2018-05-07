@@ -28,8 +28,8 @@ class ComtradeCatalogSpider(scrapy.Spider):
     # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=BE&cc=TOTAL"     #BEC
 
     # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=S1&cc=TOTAL"     #Rev.1
-    # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=S2&cc=TOTAL"       #Rev.2
-    # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=S3&cc=TOTAL"       #Rev.3
+    # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=S2&cc=TOTAL"     #Rev.2
+    # start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=S3&cc=TOTAL"     #Rev.3
     start_url = "https://comtrade.un.org/db/mr/rfCommoditiesList.aspx?px=S1&cc=TOTAL"       #Rev.4
 
 

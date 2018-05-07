@@ -67,3 +67,17 @@ class UserAgentmiddleware(UserAgentMiddleware):
         # 当每个request通过下载中间件时，该方法被调用。
         agent = random.choice(agents)
         request.headers["User-Agent"] = agent
+
+class CookieMiddleware(RetryMiddleware):
+
+    def __init__(self,setting,crawler):
+        RetryMiddleware.__init__(self,setting)
+        self.rconn=redis.from_url(setting['REDIS_URL'],db=1,decode_response=True)
+        init_cookie(self.rconn,crawler.spider.name)
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        pass
+
+    def process_request(self,request):
+        pass

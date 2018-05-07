@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67133987-f423-47b2-b1ed-890cfde9d4ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caas/mysqlpipelines/pipelines.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caas/spiders/comtrade_countrylist.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caas/spiders/worldbank_spider.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caas/useragent.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/runComtradeCountryList.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/runWorldbank.py" />
-    </list>
+    <list default="true" id="67133987-f423-47b2-b1ed-890cfde9d4ba" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,13 +11,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/caas$runBeltandRoad.coverage" NAME="runBeltandRoad Coverage Results" MODIFIED="1506737730387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/caas$run_twitter.coverage" NAME="run_twitter Coverage Results" MODIFIED="1513567557652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/caas$selenium.coverage" NAME="selenium Coverage Results" MODIFIED="1500445555685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/caas/spiders" />
     <SUITE FILE_PATH="coverage/caas$teat.coverage" NAME="teat Coverage Results" MODIFIED="1501120211926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/caas/spiders" />
+    <SUITE FILE_PATH="coverage/caas$comtrade_spider.coverage" NAME="comtrade_spider Coverage Results" MODIFIED="1524733485384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/caas/spiders" />
     <SUITE FILE_PATH="coverage/caas$runComtradeCatalog.coverage" NAME="runComtradeCatalog Coverage Results" MODIFIED="1501206276674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/caas$runRoom.coverage" NAME="runRoom Coverage Results" MODIFIED="1501830315164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/caas$fao_countries_spider.coverage" NAME="fao_countries_spider Coverage Results" MODIFIED="1501148738350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/caas/spiders" />
     <SUITE FILE_PATH="coverage/caas$main.coverage" NAME="main Coverage Results" MODIFIED="1500455343682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/caas$runFaoCountries.coverage" NAME="runFaoCountries Coverage Results" MODIFIED="1501229642749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/caas$runComtradeCountryList.coverage" NAME="runComtradeCountryList Coverage Results" MODIFIED="1501579301023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/caas$runFaoCountries.coverage" NAME="runFaoCountries Coverage Results" MODIFIED="1522807395736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/caas$comtrade_catalog_spider.coverage" NAME="comtrade_catalog_spider Coverage Results" MODIFIED="1500546031296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/caas/spiders" />
     <SUITE FILE_PATH="coverage/caas$test.coverage" NAME="test Coverage Results" MODIFIED="1500367769364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/caas/spiders" />
     <SUITE FILE_PATH="coverage/caas$downloadwebkit.coverage" NAME="downloadwebkit Coverage Results" MODIFIED="1501128846436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/caas" />
@@ -36,7 +34,50 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="comtrade_countrylist.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/caas/spiders/comtrade_countrylist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runComtradeCatalog.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runComtradeCatalog.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comtrade_catalog_spider.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/caas/spiders/comtrade_catalog_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="23" column="97" lean-forward="true" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
+              <folding>
+                <element signature="e#24#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runComtradeCountryList.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runComtradeCountryList.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -65,7 +106,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -79,10 +120,8 @@
         <option value="$PROJECT_DIR$/caas/spiders/1.html" />
         <option value="$PROJECT_DIR$/comtrade_catalog_level2.csv" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/caas/spiders/test.py" />
         <option value="$PROJECT_DIR$/caas/spiders/b.py" />
         <option value="$PROJECT_DIR$/test.csv" />
-        <option value="$PROJECT_DIR$/caas/spiders/copy.py" />
         <option value="$PROJECT_DIR$/catlog_level2.csv" />
         <option value="$PROJECT_DIR$/caas/spiders/fao.py" />
         <option value="$PROJECT_DIR$/caas/runFaoCountries.py" />
@@ -91,7 +130,6 @@
         <option value="$PROJECT_DIR$/caas/spiders/4.html" />
         <option value="$PROJECT_DIR$/caas/downloadwebkit.py" />
         <option value="$PROJECT_DIR$/caas/pipelines.py" />
-        <option value="$PROJECT_DIR$/caas/spiders/comtrade_catalog_spider.py" />
         <option value="$PROJECT_DIR$/fao.json" />
         <option value="$PROJECT_DIR$/caas/spiders/fao_countries_spider.py" />
         <option value="$PROJECT_DIR$/fao.csv" />
@@ -99,13 +137,23 @@
         <option value="$PROJECT_DIR$/caas/spiders/worldbank_spider.py" />
         <option value="$PROJECT_DIR$/runComtradeCatalog.py" />
         <option value="$PROJECT_DIR$/runComtradeCountryList.py" />
-        <option value="$PROJECT_DIR$/caas/items.py" />
         <option value="$PROJECT_DIR$/caas/spiders/comtrade_countrylist.py" />
         <option value="$PROJECT_DIR$/caas/mysqlpipelines/mysql.py" />
-        <option value="$PROJECT_DIR$/caas/settings.py" />
         <option value="$PROJECT_DIR$/caas/mysqlpipelines/pipelines.py" />
         <option value="$PROJECT_DIR$/caas/useragent.py" />
+        <option value="$PROJECT_DIR$/runRoom.py" />
+        <option value="$PROJECT_DIR$/caas/spiders/room.py" />
+        <option value="$PROJECT_DIR$/caas/cookies.py" />
         <option value="$PROJECT_DIR$/caas/middlewares.py" />
+        <option value="$PROJECT_DIR$/caas/spiders/drcnet_ydyl.py" />
+        <option value="$PROJECT_DIR$/runBeltandRoad.py" />
+        <option value="$PROJECT_DIR$/caas/spiders/beltandroad.py" />
+        <option value="D:/BeltandRoad.csv" />
+        <option value="$PROJECT_DIR$/caas/items.py" />
+        <option value="$PROJECT_DIR$/caas/settings.py" />
+        <option value="$PROJECT_DIR$/caas/spiders/comtrade_catalog_spider.py" />
+        <option value="$PROJECT_DIR$/caas/spiders/copy.py" />
+        <option value="$PROJECT_DIR$/caas/spiders/test.py" />
       </list>
     </option>
   </component>
@@ -116,10 +164,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="866" />
-    <option name="y" value="56" />
+    <option name="x" value="-12" />
+    <option name="y" value="42" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1052" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -139,6 +187,20 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 3.5.2 (D:\Users\PC\Anaconda3\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="caas" />
@@ -177,6 +239,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spiders" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -184,14 +264,21 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../myproject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../fao" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
+    <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
   </component>
-  <component name="RunManager" selected="Python.runComtradeCountryList">
-    <configuration default="false" name="runComtradeCatalog" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\scrapy\caas\files" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.comtrade_spider">
+    <configuration default="false" name="runRoom" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -204,7 +291,43 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="caas" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/runComtradeCatalog.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/runRoom.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="runBeltandRoad" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="caas" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/runBeltandRoad.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="run_twitter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="caas" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_twitter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -227,7 +350,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="fao_countries_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="comtrade_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -240,45 +363,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="caas" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/caas/spiders/fao_countries_spider.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/caas/spiders/comtrade_spider.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="runWorldbank" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="caas" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/runWorldbank.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="runComtradeCountryList" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="caas" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/runComtradeCountryList.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+    <configuration default="true" type="ApexTest" factoryName="Apex Test">
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -515,19 +605,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.runComtradeCatalog" />
-      <item index="2" class="java.lang.String" itemvalue="Python.runFaoCountries" />
-      <item index="3" class="java.lang.String" itemvalue="Python.fao_countries_spider" />
-      <item index="4" class="java.lang.String" itemvalue="Python.runWorldbank" />
-      <item index="5" class="java.lang.String" itemvalue="Python.runComtradeCountryList" />
+      <item index="1" class="java.lang.String" itemvalue="Python.runRoom" />
+      <item index="2" class="java.lang.String" itemvalue="Python.runBeltandRoad" />
+      <item index="3" class="java.lang.String" itemvalue="Python.run_twitter" />
+      <item index="4" class="java.lang.String" itemvalue="Python.runFaoCountries" />
+      <item index="5" class="java.lang.String" itemvalue="Python.comtrade_spider" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.runComtradeCountryList" />
-        <item index="1" class="java.lang.String" itemvalue="Python.runWorldbank" />
-        <item index="2" class="java.lang.String" itemvalue="Python.runFaoCountries" />
-        <item index="3" class="java.lang.String" itemvalue="Python.runComtradeCatalog" />
-        <item index="4" class="java.lang.String" itemvalue="Python.fao_countries_spider" />
+        <item index="0" class="java.lang.String" itemvalue="Python.comtrade_spider" />
+        <item index="1" class="java.lang.String" itemvalue="Python.runFaoCountries" />
+        <item index="2" class="java.lang.String" itemvalue="Python.run_twitter" />
+        <item index="3" class="java.lang.String" itemvalue="Python.runBeltandRoad" />
+        <item index="4" class="java.lang.String" itemvalue="Python.runRoom" />
       </list>
     </recent_temporary>
   </component>
@@ -545,88 +635,49 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="866" y="56" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <frame x="-12" y="42" width="1936" height="1052" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15565032" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8761161" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3080357" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18230277" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3112745" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39700374" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.034313727" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3112745" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/caas/spiders/comtrade_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/caas/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/caas/transCookie.py" />
-    <entry file="file://D:/Users/PC/Anaconda3/Lib/site-packages/selenium/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/caas/spiders/selenium.py" />
-    <entry file="file://$PROJECT_DIR$/douban.csv" />
-    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/caas/spiders/comtrade_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comtrade_catalog_level2.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4032">
-          <caret line="168" column="50" lean-forward="false" selection-start-line="168" selection-start-column="50" selection-end-line="168" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/caas/spiders/b.py" />
     <entry file="file://D:/Users/PC/Anaconda3/Lib/site-packages/scrapy/http/request/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -636,7 +687,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/caas/spiders/1.html" />
-    <entry file="file://$PROJECT_DIR$/catlog_level2.csv">
+    <entry file="file://$PROJECT_DIR$/files/catlog_level2.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -660,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caas/spiders/copy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/caas/spiders/teat.py" />
     <entry file="file://D:/Users/PC/Anaconda3/Lib/webbrowser.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -682,14 +726,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caas/spiders/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comtrade_catalog_level2.json">
+    <entry file="file://$PROJECT_DIR$/files/comtrade_catalog_level2.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
@@ -699,48 +736,6 @@
     <entry file="file://$PROJECT_DIR$/caas/spiders/4.html" />
     <entry file="file://$PROJECT_DIR$/test.csv" />
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/caas/downloadwebkit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runFaoCountries.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runWorldbank.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fao.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="577" column="34" lean-forward="false" selection-start-line="577" selection-start-column="34" selection-end-line="577" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fao.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440737">
-          <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Users/PC/Anaconda3/Lib/site-packages/pymysql/err.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -748,34 +743,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caas/spiders/worldbank_spider.py">
+    <entry file="file://D:/Users/PC/Anaconda3/Lib/site-packages/scrapy/item.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        <state relative-caret-position="819">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caas/MysqlComtradeCatalog.py">
+    <entry file="file://D:/Users/PC/Anaconda3/Lib/site-packages/redis/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runComtradeCatalog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runComtradeCountryList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="49" lean-forward="false" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/caas/spiders/room.py" />
+    <entry file="file://$PROJECT_DIR$/caas/spiders/drcnet_ydyl.py" />
     <entry file="file://$PROJECT_DIR$/caas/spiders/geckodriver.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -783,47 +766,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caas/mysqlpipelines/pipelines.py">
+    <entry file="file://D:/BeltandRoad.csv" />
+    <entry file="file://$PROJECT_DIR$/caas/spiders/test_twitter.py" />
+    <entry file="file://$PROJECT_DIR$/runWorldbank.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-          <folding>
-            <element signature="e#27#70#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="24">
+          <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caas/spiders/worldbank_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caas/spiders/beltandroad.py" />
+    <entry file="file://$PROJECT_DIR$/caas/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1824">
+          <caret line="82" column="12" lean-forward="false" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caas/downloadwebkit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caas/cookies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caas/MysqlComtradeCatalog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/caas/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="72" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="72" />
+        <state relative-caret-position="528">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <marker date="1501206225077" expanded="true" signature="1095:1208" ph="insert into Rev1_catalog_level1... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caas/spiders/fao_countries_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/caas/mysqlpipelines/mysql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="360">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
           <folding>
-            <marker date="1501578917430" expanded="true" signature="526:559" ph="insert into worldbank_indicators... " />
-            <marker date="1501578917430" expanded="true" signature="526:567" ph="insert into worldbank_indicators... " />
-            <marker date="1501578917430" expanded="true" signature="526:568" ph="insert into worldbank_indicators... " />
-            <marker date="1501578917430" expanded="true" signature="526:577" ph="insert into worldbank_indicators... " />
             <marker date="1501578917430" expanded="true" signature="526:612" ph="insert into worldbank_indicators... " />
             <marker date="1501578917430" expanded="true" signature="850:929" ph="select exist... " />
-            <marker date="1501578917430" expanded="true" signature="877:929" ph="insert into worldbank_indicators... " />
-            <marker date="1501578917430" expanded="true" signature="1195:1207" ph="insert into cm... " />
+            <marker date="1501578917430" expanded="true" signature="864:915" ph="select 1 fro... worldbank_indicators" />
             <marker date="1501578917430" expanded="true" signature="1195:1295" ph="insert into comtrade_countrylist... " />
             <marker date="1501578917430" expanded="true" signature="1550:1635" ph="select exist... " />
             <marker date="1501578917430" expanded="true" signature="1564:1618" ph="select 1 fro... comtrade_countrylist" />
@@ -832,66 +838,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caas/items.py">
+    <entry file="file://$PROJECT_DIR$/caas/mysqlpipelines/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        <state relative-caret-position="624">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caas/spiders/comtrade_catalog_spider.py">
+    <entry file="file://$PROJECT_DIR$/runFaoCountries.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="121" column="50" lean-forward="false" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
-          <folding>
-            <element signature="e#24#56#0" expanded="false" />
-            <element signature="e#2291#4532#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/caas/spiders/comtrade_countrylist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding>
-            <element signature="e#23#36#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Users/PC/Anaconda3/Lib/site-packages/scrapy/item.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="24">
+          <caret line="1" column="34" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/caas/useragent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="-827">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/caas/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1989">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="1632">
+          <caret line="68" column="45" lean-forward="true" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caas/middlewares.py">
+    <entry file="file://$PROJECT_DIR$/fao.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="41" column="2" lean-forward="true" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fao.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="80" lean-forward="true" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runRoom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runBeltandRoad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="47" lean-forward="false" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caas/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
           <folding>
-            <element signature="e#168#194#0" expanded="true" />
-            <element signature="e#484#2122#0" expanded="false" />
+            <element signature="e#215#347#0" expanded="false" />
+            <element signature="e#426#505#0" expanded="false" />
+            <element signature="e#582#896#0" expanded="false" />
+            <element signature="e#949#1119#0" expanded="false" />
+            <element signature="e#1172#1340#0" expanded="false" />
+            <element signature="e#1393#1561#0" expanded="false" />
+            <element signature="e#1613#1990#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caas/spiders/fao_countries_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#36#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runComtradeCountryList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runComtradeCatalog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caas/spiders/copy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caas/spiders/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="195" column="0" lean-forward="true" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caas/spiders/comtrade_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="44" lean-forward="true" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caas/spiders/comtrade_countrylist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caas/spiders/comtrade_catalog_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="97" lean-forward="true" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
+          <folding>
+            <element signature="e#24#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
